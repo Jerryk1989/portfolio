@@ -4,14 +4,7 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Projects</title>
-</head>
-<body>
     @foreach (var project in Model)
     {
         <div>
@@ -19,9 +12,5 @@
             <p>@project.PrimaryLanguage</p>
             <p>@project.Description</p>
         </div>
-
     }
-    <div> 
-    </div>
-</body>
-</html>
+
