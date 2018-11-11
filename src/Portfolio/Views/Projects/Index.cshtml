@@ -1,0 +1,27 @@
+﻿@model Portfolio.Models.Project[]
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Projects</title>
+</head>
+<body>
+    @foreach (var project in Model)
+    {
+        <div>
+            <h1>@project.ProjectName</h1>
+            <p>@project.PrimaryLanguage</p>
+            <p>@project.Description</p>
+        </div>
+
+    }
+    <div> 
+    </div>
+</body>
+</html>
