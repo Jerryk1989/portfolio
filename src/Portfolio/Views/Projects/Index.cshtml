@@ -1,16 +1,30 @@
 ﻿@model Portfolio.Models.Project[]
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
+<div class="card-deck">
     @foreach (var project in Model)
     {
-        <div>
-            <h1>@project.ProjectName</h1>
-            <p>@project.PrimaryLanguage</p>
-            <p>@project.Description</p>
+       <!-- <div class="col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@project.ProjectName</h5>
+                    <p style="font-size: 12px;"><strong>Language:</strong> @project.PrimaryLanguage</p>
+                    <p>@project.Description</p>
+                    <a href="#" class="btn btn-light">View @project.ProjectName</a>
+                </div>
+            </div>
+        </div>-->
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@project.ProjectName</h5>
+                <p style="font-size: 12px;"><strong>Language:</strong> @project.PrimaryLanguage</p>
+                <p class="card-text font-weight-light">@project.Description</p>
+            </div>
         </div>
     }
-
+</div>
