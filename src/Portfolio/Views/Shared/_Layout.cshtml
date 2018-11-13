@@ -12,7 +12,6 @@
     <title>Portfolio Site</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/CustomStyle.css" rel="stylesheet" type="text/css" />
-    <script src="/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top navbarPadding">
@@ -24,13 +23,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        @Html.ActionLink("Home", "Index", "Projects", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Home", "Index", "Portfolio", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        @Html.ActionLink("Projects", "Projects", "Portfolio", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        @Html.ActionLink("Experience", "Experience", "Portfolio", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact me</a>

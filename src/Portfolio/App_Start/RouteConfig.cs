@@ -12,7 +12,7 @@ namespace Portfolio
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Projects", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Portfolio", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
