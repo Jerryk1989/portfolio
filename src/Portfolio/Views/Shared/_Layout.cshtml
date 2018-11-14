@@ -32,7 +32,10 @@
                         @Html.ActionLink("Experience", "Experience", "Portfolio", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact me</a>
+                        @Html.ActionLink("Resume", "Resume", "Portfolio", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Contact me", "ContactMe", "Portfolio", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 </ul>
             </div>

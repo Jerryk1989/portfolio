@@ -166,6 +166,8 @@
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="Views\Portfolio\Projects.cshtml" />
     <Content Include="Views\Portfolio\Experience.cshtml" />
+    <Content Include="Views\Portfolio\Resume.cshtml" />
+    <Content Include="Views\Portfolio\ContactMe.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

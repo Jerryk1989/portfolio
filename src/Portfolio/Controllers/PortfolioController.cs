@@ -33,5 +33,15 @@ namespace Portfolio.Controllers
             return View(experience);
         }
 
+        public ActionResult Resume()
+        {
+            return View("Resume");
+        }
+
+        public ActionResult ContactMe()
+        {
+            return View("ContactMe");
+        }
+
     }
 }
