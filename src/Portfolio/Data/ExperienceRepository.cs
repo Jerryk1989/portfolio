@@ -34,7 +34,7 @@ namespace Portfolio.Data
             new Experience()
             {
                 ExperienceName = "Github",
-                ExperienceDescription ="At my current position we actually use TFS, but in my free time I use github.  This website and a few other person projects I've worked on can be found on my github page located <a href='http://www.github.com/jerryk1989'>here</a>."
+                ExperienceDescription ="At my current position we actually use TFS, but in my free time I use github.  This website and a few other person projects I've worked on can be found on my github page located "
             }
         };
 

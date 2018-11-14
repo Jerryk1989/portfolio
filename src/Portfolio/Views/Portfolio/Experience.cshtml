@@ -12,7 +12,13 @@
 @foreach (var exp in Model)
 {
     <label><h5>@exp.ExperienceName</h5></label>
-    <p>@exp.ExperienceDescription</p>
+    <p>
+        @exp.ExperienceDescription
+        @if (exp.ExperienceName == "Github")
+        {
+            <a href="http://www.github.com/jerryk1989">here.</a>
+        }
+    </p>
     <div style="padding-bottom: 10px;"></div>
 }
 
